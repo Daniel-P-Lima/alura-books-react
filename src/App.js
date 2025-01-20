@@ -1,13 +1,19 @@
-import "./App.css";
-import Header from "./componentes/Header"
-import styled from 'styled-components'
+import Header from "./componentes/Header";
+import styled from "styled-components";
 
-function App() {
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #002f52 35%, #326589);
+
+`;
+
+export default function App() {
   return (
-    <div className="app">
-      <Header/>
-    </div>
+    <AppContainer>
+      <Header />
+    </AppContainer>
   );
 }
 
-export default App;
+
