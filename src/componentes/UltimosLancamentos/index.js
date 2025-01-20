@@ -1,6 +1,9 @@
 import { livros } from "./dadosUltimosLancamentos";
 import styled from "styled-components";
 import { Titulo } from "../Titulo";
+import CardRecomenda from "../CardRecomenda";
+import imagemLivro from "../../imagens/livro.png";
+
 const UltimosLancamentosContainer = styled.section`
   background-color: #ebecee;
   padding-bottom: 20px;
@@ -28,9 +31,12 @@ export default function UltimosLancamentos() {
           <img alt="imagem-livro" src={livro.src}></img>
         ))}
       </NovosLivrosContainer>
-      <div>
-        
-      </div>
+      <CardRecomenda
+        titulo="Talvez você se interesse por"
+        subtitulo="Angular 11"
+        descricao="Construindo uma aplicação com a plataforma Google"
+        img={imagemLivro}
+      ></CardRecomenda>
     </UltimosLancamentosContainer>
   );
 }
