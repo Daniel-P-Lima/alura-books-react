@@ -1,6 +1,7 @@
 import "./estilo.css";
 import logo from "../../imagens/logo.svg";
-function Logo() {
+
+export default function Logo() {
   return (
     <div className="logo">
       <img src={logo} 
@@ -13,4 +14,3 @@ function Logo() {
   );
 }
 
-export default Logo;

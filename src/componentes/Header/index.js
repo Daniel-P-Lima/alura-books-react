@@ -3,7 +3,7 @@ import Logo from "../Logo"
 import OpcoesHeader from "../OpcoesHeader";
 import IconesHeader from "../IconesHeader";
 
-function Header() {
+export default function Header() {
   return (
     <header className="app-header">
       <Logo/>
@@ -14,4 +14,3 @@ function Header() {
 }
 
 
-export default Header

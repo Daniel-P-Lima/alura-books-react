@@ -3,7 +3,7 @@ import perfil from "../../imagens/perfil.svg";
 import sacola from "../../imagens/sacola.svg";
 
 const icones = [perfil, sacola];
-function IconesHeader() {
+export default function IconesHeader() {
   return (
     <ul className="icones">
       {icones.map((icone) => (
@@ -15,4 +15,4 @@ function IconesHeader() {
   );
 }
 
-export default IconesHeader;
+
