@@ -63,7 +63,7 @@ export default function Pesquisa() {
       {livrosPesquisados.map((livro) => (
         <Resultado>
           <p>{livro.nome}</p>
-          <img src={livro.src}/>
+          <img alt="imagem-livro" src={livro.src}/>
         </Resultado>
       ))}
     </PesquisaContainer>
