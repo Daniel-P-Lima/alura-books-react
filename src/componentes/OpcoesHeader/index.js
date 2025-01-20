@@ -1,7 +1,7 @@
 import "./estilo.css";
 const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "MINHA ESTANTE"];
 
-function OpcoesHeader() {
+export default function OpcoesHeader() {
   return (
     <ul className="opcoes">
       {textoOpcoes.map((texto) => (
@@ -12,5 +12,3 @@ function OpcoesHeader() {
     </ul>
   );
 }
-
-export default OpcoesHeader;
